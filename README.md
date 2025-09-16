@@ -1,10 +1,19 @@
 # File Storage
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+Storing the file and tracking status
 
-## Development server
+## System Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Node version: 18.20.8
+Angular version: 16.2.12
+
+##  1. Clone the project:
+     git clone hhttps://github.com/durga0702/file-storage
+##  2. Install Node.js dependencies:
+     npm install
+##  2. Run Project:
+     Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+
 
 ## Code scaffolding
 
