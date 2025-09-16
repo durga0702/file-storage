@@ -20,7 +20,7 @@ export class DashboardComponent {
    * copy link
    */
   copyLink(){
-    navigator.clipboard.writeText('https://google.com')
+    navigator.clipboard.writeText('https://www.deloitte.com/in/en.html')
     .then(() => {
       alert('Link copied to clipboard!');
     })
