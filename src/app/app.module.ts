@@ -6,9 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MyfilesComponent } from './myfiles/myfiles.component';
-import { HeaderComponent } from './ui/header/header.component';
-// import { MainComponent } from './ui/main/main.component';
-import { SidebarComponent } from './ui/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +13,6 @@ import { SidebarComponent } from './ui/sidebar/sidebar.component';
     HomeComponent,
     DashboardComponent,
     MyfilesComponent,
-    HeaderComponent,
-    // MainComponent,
-    SidebarComponent,
   ],
   imports: [
     BrowserModule,
