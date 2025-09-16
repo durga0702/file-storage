@@ -5,19 +5,25 @@
       <h1 class="text-2xl font-bold text-foreground mb-6">My Files</h1>
     </div>
     <div class="grid grid-cols-4 gap-2">
-        <ng-container *ngFor="let file of [].constructor(30)">
-               <div class="file-w file-h cursor-pointer">
-                <a href="assets/file-sample_150kB.pdf" download="file.pdf">
+        <ng-container *ngFor="let file of [].constructor(30); let i=index">
+               <div class="file-w file-h cursor-pointer flex gap-2 items-center">
+               <div class="">
+                <a href="assets/file-sample_150kB.pdf" [download]="'file' + (i+1) + '.pdf'">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="lucide lucide-file-text w-20 h-20 mr-3">
-          <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
-          <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-          <path d="M10 9H8"></path>
-          <path d="M16 13H8"></path>
-          <path d="M16 17H8"></path>
-        </svg>
-                </a>
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-file-text w-20 h-20 mr-3">
+              <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+              <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+              <path d="M10 9H8"></path>
+              <path d="M16 13H8"></path>
+              <path d="M16 17H8"></path>
+            </svg>
+                    </a>
+               </div>
+               <div class="">
+                <p>{{'file' +''+ (i+1)+'.pdf'}}</p>
+                <p>150 KB</p>
+               </div>
                </div>
         </ng-container>
     </div>
